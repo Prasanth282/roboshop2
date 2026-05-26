@@ -34,7 +34,8 @@ fi
 }
 
 print_time () {
+    
+    TOTAL_TIME=$(($END_TIME - $START_TIME))
 
-    TOTAL_TIME=$($END_TIME - $START_TIME)
     echo " total time taken to execute the script is :: $TOTAL_TIME " 
 }
